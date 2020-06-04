@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0;">
+    <title>报告会直播课</title>
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.8/lib/index.css" />
+
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+
+
+
+    <style>
+        .video video {
+            height: 50vw;
+            width: 100%
+        }
+
+        .js {
+            padding: 10px;
+        }
+
+        .js_title {
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .js_content {
+            text-indent: 2em;
+            line-height: 2em;
+            margin-top: 0;
+        }
+
+        .xq_title {
+
+            padding: 10px
+        }
+
+        .xq_title_tit {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .xq_title_tit p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .xq_title_time {
+            margin-top: 5px;
+        }
+
+        .xq_title_time span {
+            font-size: 12px;
+
+        }
+
+        .xq_title_time span:first-child {
+            color: #F35B15;
+        }
+
+        .xq_title_time span:last-child {
+            padding-left: 10px;
+        }
+
+        .xq_bgr,
+        .grjs-whc,
+        .grjs-zyh {
+            padding: 10px;
+        }
+
+        .xq_dw {
+            padding: 10px;
+        }
+
+        .xq_dw p {
+            margin-top: 0;
+        }
+
+        .xq_dw_name {
+            font-size: 14px;
+        }
+
+        .xq_dw_name p {
+            margin-bottom: 8px;
+        }
+
+        .xq_bgr_name {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .xq_bgr_js {
+            font-size: 16px;
+        }
+
+        .xq_dw_type {
+            font-weight: 600;
+        }
+
+        img {
+            border: 0px;
+            font-size: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <van-row :span="24">
+            <van-col class="video" :span="24">
+
+                <!-- 视频开始 -->
+                <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto"
+                    style="width:100Vw;height:35vh;" poster="img/loading.jpg" data-setup="{}">
+                    <source
+                        src="http://1258048802.vod2.myqcloud.com/eb7400f0vodtranscq1258048802/ca3f67e55285890802616540713/v.f20.mp4"
+                        type="video/mp4" />
+
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+
+
+
+
+                <!-- 视频结束 -->
+                <!-- <img src="./img/logo.png" width="50%" height="50%" alt=""> -->
+
+
+
+            </van-col>
+            <van-col class="container" :span="24">
+                <van-tabs v-model="active" color="#3187D9">
+
+                    <van-tab title="详情">
+                        <van-col :span="24" class="xq_title">
+                            <van-col class="xq_title_tit" :span="24">
+                                <p> 礼赞逆行英雄，弘扬“战疫”精神——广西援鄂抗疫英雄事迹报告会直播课</p>
+                            </van-col>
+                            <van-col class="xq_title_time" :span="24">
+                                <span>直播时长</span>
+                                <span>80分钟</span>
+                            </van-col>
+                        </van-col>
+                        <van-col style="height: 10px;background:rgba(245,246,247,1);" :span="24"></van-col>
+                        <van-col :span="24" class="xq_bgr">
+                            <van-col :span="24">
+                                <p class="xq_bgr_name"> 报告人</p>
+                            </van-col>
+                            <!-- <van-col :span="24">
+                                <p class="xq_bqr_js">邀请广西医科大第一附属医院和广西江滨医院参加
+                                    广西首批援鄂医疗的优秀成员各1人作报告，通过
+                                    媒体进行直播，每人1节课，每节课40分钟。</p>
+                            </van-col> -->
+
+
+
+                            <van-col :span="24" style="margin-top: 20px;">
+                                <van-col :span="8">
+                                    <van-row>
+                                        <van-col :span="24" style="text-align: center;">
+                                            <van-image width="100" height="100" cover src="./img/tx2.png" />
+                                        </van-col>
+                                        <van-col :span="24" style="text-align: center;">
+                                            <p style="font-weight: 800;">温汉春</p>
+                                        </van-col>
+                                    </van-row>
+                                </van-col>
+                                <van-col :span="8">
+                                    <van-row>
+                                        <van-col :span="24" style="text-align: center;">
+                                            <van-image width="100" height="100" cover src="./img/tx1.png" />
+                                        </van-col>
+                                        <van-col :span="24" style="text-align: center;">
+                                            <p style="font-weight: 800;">邹炎华</p>
+                                        </van-col>
+                                    </van-row>
+                                </van-col>
+
+
+
+                            </van-col>
+
+
+
+
+
+
+
+
+                        </van-col>
+                        <van-col :span="24" class="zbdw">
+
+                            <van-col style="height: 10px;background:rgba(245,246,247,1);width: 100vw;" :span="24">
+                            </van-col>
+                            <van-col :span="24" class="xq_dw">
+                                <van-col :span="6">
+                                    <p class="xq_dw_type">主办单位</p>
+                                </van-col>
+                                <van-col :span="15" class="xq_dw_name">
+                                    <p>自治区科协</p>
+                                    <p>自治区教育厅</p>
+                                </van-col>
+
+                            </van-col>
+                            <van-col :span="24" style="margin: 0;">
+                                <van-divider style="margin: 0;"></van-divider>
+                            </van-col>
+
+                            <van-col :span="24" class="xq_dw">
+                                <van-col :span="6">
+                                    <p class="xq_dw_type">承办单位</p>
+                                </van-col>
+                                <van-col :span="15" class="xq_dw_name">
+                                    <p>广西科普传播中心</p>
+                                    <p>广西广播电视台</p>
+                                    <p>广西青少年科技中心</p>
+                                    <p>广西医科大第一附属医院</p>
+                                    <p>广西江滨医院</p>
+
+                                </van-col>
+                            </van-col>
+
+                        </van-col>
+                        <van-col style="height: 10px;background:rgba(245,246,247,1);width: 100vw;" :span="24"></van-col>
+                        <van-col style="text-align: center;"  :span="24">
+                            <p style="font-size: 20px;font-weight: 800;margin:5px 0" :span="24">人物简介</p>
+                        </van-col>
+                        <van-col :span="24" class="grjs-whc">
+
+                            <van-col>
+                                <van-row>
+                                    <!-- 温汉春部分 -->
+                                    <van-col>
+                                        <van-row>
+
+                                            <van-col>
+                                                <p style="font-weight: 800;">温汉春</p>
+                                                <p>广西医科大学第一附属医院 重症医学科一病区副主任 主任医师 </p>
+
+                                                <p> 广西医科大学第一附属医院支援湖北第一批医疗队队长</p>
+                                            </van-col>
+
+                                            <van-col>
+                                                <p style="font-weight: 600;">心声：</p>
+                                                <p> 武汉需要我们待多久，我们就待多久。</p>
+                                                <!-- <p style="text-indent: 2em;">
+                                                    一方面我从事重症医学近20年，有救治H7N9患者经验，在医院带队做ECMO。另一方面，我在武汉出生，妈妈是武汉人，作为地质队员援助广西，所以强烈要求参战，援助武汉!
+                                                </p> -->
+                                            </van-col>
+                                            <van-col style="display: flex;justify-content: center;align-items: center;"
+                                                :span="24">
+                                                <van-image cover src="./img/girl1.png" />
+                                            </van-col>
+                                            <van-col :span="24" style="height: 40px;"></van-col>
+                                            <van-col style="display: flex;justify-content: center;align-items: center;"
+                                                :span="24">
+                                                <van-image cover src="./img/girl2.jpg" />
+                                            </van-col>
+                                            <van-col :span="24" style="height: 40px;"></van-col>
+                                            <van-col style="display: flex;justify-content: center;align-items: center;"
+                                                :span="24">
+                                                <van-image cover src="./img/girl3.png" />
+                                            </van-col>
+                                            <van-col :span="24" style="height: 40px;"></van-col>
+
+                                            <van-col style="display: flex;justify-content: center;align-items: center;"
+                                                :span="24">
+                                                <van-image cover src="./img/girl4.png" />
+                                            </van-col>
+                                            <van-col :span="24" style="height: 40px;"></van-col>
+
+                                            <van-col style="display: flex;justify-content: center;align-items: center;"
+                                                :span="24">
+                                                <van-image cover src="./img/girl5.jpg" />
+                                            </van-col>
+                                            <van-col :span="24" style="height: 40px;"></van-col>
+
+
+                                        </van-row>
+                                    </van-col>
+                                    <!-- 温汉春结束 -->
+
+
+
+
+
+
+                                </van-row>
+                            </van-col>
+                        </van-col>
+                        <van-col style="height: 10px;background:rgba(245,246,247,1);width: 100vw;" :span="24"></van-col>
+                        
+                        <van-col :span="24" class="grjs-zyh">
+
+                            <!-- 邹炎华 -->
+                            <van-col>
+                                <van-row>
+
+                                    <van-col>
+                                        <p style="font-weight: 800;">邹炎华</p>
+                                        <p>广西壮族自治区江滨医院（自治区第三人民医院）呼吸内科护师 预备党员 广西第一批援鄂医疗队队员</p>
+                                    </van-col>
+
+                                    <van-col>
+                                        <p style="font-weight: 600;">心声：</p>
+
+                                        <p>疫情如战场，来到武汉，我就是一名战士！</p>
+                                    </van-col>
+
+                                    <!-- <van-col>
+                                    <p>个人感言：</p>
+                                    <p> 每一个战胜自己恐惧的人，都是英雄，死亡不是我们的终点，遗忘才是。</p>
+                                </van-col> -->
+                                    <van-col style="display: flex;justify-content: center;align-items: center;"
+                                        :span="24">
+                                        <van-image cover src="./img/boy2.png" />
+                                    </van-col>
+                                    <van-col :span="24" style="height: 40px;"></van-col>
+                                    <van-col style="display: flex;justify-content: center;align-items: center;"
+                                        :span="24">
+                                        <van-image cover src="./img/boy1.png" />
+                                    </van-col>
+                                    <van-col :span="24" style="height: 40px;"></van-col>
+                                    <van-col style="display: flex;justify-content: center;align-items: center;"
+                                        :span="24">
+                                        <van-image cover src="./img/boy3.png" />
+                                    </van-col>
+                                    <van-col :span="24" style="height: 40px;"></van-col>
+                                    <van-col style="display: flex;justify-content: center;align-items: center;"
+                                        :span="24">
+                                        <van-image cover src="./img/boy4.png" />
+                                    </van-col>
+                                    <van-col :span="24" style="height: 40px;"></van-col>
+                                    <van-col style="display: flex;justify-content: center;align-items: center;"
+                                        :span="24">
+                                        <van-image cover src="./img/boy5.png" />
+                                    </van-col>
+                                </van-row>
+                            </van-col>
+                            <!-- 邹炎华结束 -->
+                        </van-col>
+                    </van-tab>
+                    <van-tab title="介绍">
+                        <van-col style="height: 20px;background:rgba(245,246,247,1);" :span="24"></van-col>
+                        <van-col :span="24" class="js">
+                            <van-row>
+                                <van-col style="padding-top: 10px;">
+                                    <van-image width="25px" height="30px" cover src="./img/xbs.png" />
+                                </van-col>
+                                <van-col>
+                                    <p class="js_title">小博士报简介</p>
+                                </van-col>
+
+                            </van-row>
+
+                            <p class="js_content">
+                                《小博士报》于1984年12月25日创刊，主管、主办单位为广西科学技术协会。《小博士报》是面向全国小学生发行的少儿报纸，出版有小学低年级、中年级、高年级及科学与奥秘四个周刊。创办36年来，《小博士报》始终坚持以质量求生存，以品牌赢市场，以向广大青少年提供丰富的、优质的精神食粮为己任，被学生誉为“学习的良师益友”，被教师和家长誉为
+                                “培养大博士的摇篮”。
+                                《小博士报》的报纸质量处于全国少儿报纸领先地位，多次荣获国家、自治区级优秀少儿报刊奖。由于坚持精品办报、内容为王，《小博士报》树立了良好的社会形象和报纸品牌，深受广大青少年读者的喜爱。
+                            </p>
+                        </van-col>
+                    </van-tab>
+                    <van-tab title="" disabled></van-tab>
+                    <van-tab title="" disabled></van-tab>
+
+                </van-tabs>
+            </van-col>
+        </van-row>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="./js/videojs-ie8.min.js"></script>
+<script src="./js/video.js"></script>
+
+<!-- 引入 Vue 和 Vant 的 JS 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vant@2.8/lib/vant.min.js"></script>
+
+<script>
+    // 在 #app 标签下渲染一个按钮组件
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                value: '',
+                active: 0
+            }
+
+        }
+    });
+
+
+</script>
+
+
+</html>
