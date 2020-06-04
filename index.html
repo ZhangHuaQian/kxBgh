@@ -104,10 +104,15 @@
             border: 0px;
             font-size: 0;
         }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 
-<body>
+<body id="activity-detail" class="zh_CN mm_appmsg discuss_tab appmsg_skin_default appmsg_style_default not_in_mm">
     <div id="app">
         <van-row :span="24">
             <van-col class="video" :span="24">
@@ -228,124 +233,436 @@
                             </van-col>
 
                         </van-col>
-                        <van-col style="height: 10px;background:rgba(245,246,247,1);width: 100vw;" :span="24"></van-col>
-                        <van-col style="text-align: center;"  :span="24">
-                            <p style="font-size: 20px;font-weight: 800;margin:5px 0" :span="24">人物简介</p>
-                        </van-col>
-                        <van-col :span="24" class="grjs-whc">
+                        <van-row>
+                            <van-col :span="24">
+                                <!-- 简介 -->
+                                <van-col :span="24" style="padding-left:5px;padding-right: 5px;">
+                                    <!-- <p
+                                        style="margin-left: auto;max-width: 100%;min-height: 1em;text-align: center;width: 3em;box-sizing: border-box !important;overflow-wrap: break-word !important;margin-top:0">
+                                        <img data-ratio="0.54" data-type="png" data-w="200"
+                                            data-src="https://mmbiz.qpic.cn/mmbiz_png/Ljib4So7yuWiaRfTCHssQh4gdoMCemwnvJgSPUcdYyib1tJviaLOUoddA9pz4V7pmAhhT9qaQkicEk1LPQLKBfibAJSQ/640?wx_fmt=png"
+                                            style="background-color: rgb(238, 237, 235); border-width: 1px; border-style: solid; border-color: rgb(238, 237, 235); background-size: 22px; background-position: center center; background-repeat: no-repeat; display: block; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 51px !important; height: auto !important; visibility: visible !important;"
+                                            _width="51px"
+                                            src="https://mmbiz.qpic.cn/mmbiz_png/Ljib4So7yuWiaRfTCHssQh4gdoMCemwnvJgSPUcdYyib1tJviaLOUoddA9pz4V7pmAhhT9qaQkicEk1LPQLKBfibAJSQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"
+                                            crossorigin="anonymous" class="" data-fail="0"></p>
+                                    <section
+                                        style="max-width: 100%;display: flex;justify-content: center;align-items: flex-start;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                        <section
+                                            style="margin-top: 5px;padding: 3px 10px;max-width: 100%;box-sizing: border-box;background-color: rgb(148, 216, 234);display: inline-block;vertical-align: middle;overflow-wrap: break-word !important;">
+                                            <p
+                                                style="max-width: 100%;min-height: 1em;letter-spacing: 2px;box-sizing: border-box !important;overflow-wrap: break-word !important;margin-top:0px;margin-bottom:0px">
+                                                <span
+                                                    style="max-width: 100%;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong
+                                                        style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;overflow-wrap: break-word !important;">报告人：温汉春</span></strong></span>
+                                            </p>
+                                        </section>
+                                        <section
+                                            style="margin-left: -8px;max-width: 100%;box-sizing: border-box;border-style: solid;border-width: 2px;border-color: rgb(254, 254, 254);width: 1em;height: 1em;background-color: rgb(255, 197, 197);border-radius: 50%;display: inline-block;vertical-align: top;overflow-wrap: break-word !important;">
+                                            <br
+                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                        </section>
+                                    </section> -->
+                                    <section data-support="96编辑器" data-style-id="26937"
+                                        style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                        <section
+                                            style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;text-align: right;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                            <section
+                                                style="padding: 5px;max-width: 100%;border-width: 5px;border-style: solid;border-color: rgb(214, 237, 243);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                <section
+                                                    style="padding: 5px 15px 15px;max-width: 100%;border-width: 1px;border-style: solid;border-color: rgb(214, 237, 243);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                    <p
+                                                        style="margin-left: auto;max-width: 100%;min-height: 1em;text-align: center;width: 3em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        <img data-ratio="0.54" data-type="png" data-w="200"
+                                                            data-src="https://mmbiz.qpic.cn/mmbiz_png/Ljib4So7yuWiaRfTCHssQh4gdoMCemwnvJgSPUcdYyib1tJviaLOUoddA9pz4V7pmAhhT9qaQkicEk1LPQLKBfibAJSQ/640?wx_fmt=png"
+                                                            style="background-color: rgb(238, 237, 235); border-width: 1px; border-style: solid; border-color: rgb(238, 237, 235); background-size: 22px; background-position: center center; background-repeat: no-repeat; display: block; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 51px !important; height: auto !important; visibility: visible !important;"
+                                                            _width="51px"
+                                                            src="https://mmbiz.qpic.cn/mmbiz_png/Ljib4So7yuWiaRfTCHssQh4gdoMCemwnvJgSPUcdYyib1tJviaLOUoddA9pz4V7pmAhhT9qaQkicEk1LPQLKBfibAJSQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"
+                                                            crossorigin="anonymous" class="" data-fail="0"></p>
+                                                    <section
+                                                        style="max-width: 100%;display: flex;justify-content: center;align-items: flex-start;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        <section
+                                                            style="margin-top: 5px;padding: 3px 10px;max-width: 100%;box-sizing: border-box;background-color: rgb(148, 216, 234);display: inline-block;vertical-align: middle;overflow-wrap: break-word !important;">
+                                                            <p
+                                                                style="max-width: 100%;min-height: 1em;letter-spacing: 2px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                <span
+                                                                    style="max-width: 100%;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong
+                                                                        style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                                                                            style="max-width: 100%;font-size: 20px;box-sizing: border-box !important;overflow-wrap: break-word !important;">报告人：温汉春</span></strong></span>
+                                                            </p>
+                                                        </section>
+                                                        <section
+                                                            style="margin-left: -8px;max-width: 100%;box-sizing: border-box;border-style: solid;border-width: 2px;border-color: rgb(254, 254, 254);width: 1em;height: 1em;background-color: rgb(255, 197, 197);border-radius: 50%;display: inline-block;vertical-align: top;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </section>
+                                                    </section>
+                                                    <section
+                                                        style="margin-top: 15px;margin-bottom: 5px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        <section data-support="96编辑器" data-style-id="26055"
+                                                            style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <section
+                                                                style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                <section
+                                                                    style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                    <section
+                                                                        style="position: relative;top: -10px;max-width: 100%;display: inline-block;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                        <section
+                                                                            style="max-width: 100%;background-color: rgb(254, 254, 254);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                            <section
+                                                                                style="max-width: 100%;display: flex;justify-content: center;align-items: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <section
+                                                                                    style="max-width: 100%;width: 8px;height: 8px;background: rgb(159, 210, 236);border-radius: 50%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <br
+                                                                                        style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                </section>
+                                                                                <p
+                                                                                    style="max-width: 100%;min-height: 1em;text-align: center;letter-spacing: 2px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <img data-ratio="1" data-type="gif"
+                                                                                        data-w="18"
+                                                                                        data-src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                        class="__bg_gif"
+                                                                                        style="display: block; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 18px !important; height: auto !important; visibility: visible !important;"
+                                                                                        _width="18px"
+                                                                                        src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                        data-order="2" data-fail="0">
+                                                                                </p>
+                                                                            </section>
+                                                                        </section>
+                                                                    </section>
+                                                                    <section
+                                                                        style="margin-top: -25px;margin-bottom: -12px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                        <section
+                                                                            style="padding-top: 8px;padding-bottom: 8px;max-width: 100%;box-sizing: border-box;border-right-width: 2px;border-left-width: 2px;border-top: solid rgb(159, 210, 236);border-bottom: solid rgb(159, 210, 236);border-right-color: rgb(159, 210, 236);border-left-color: rgb(159, 210, 236);overflow-wrap: break-word !important;">
+                                                                            <section
+                                                                                style="padding: 10px;max-width: 100%;background-color: rgb(218, 241, 252);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <section
+                                                                                    style="max-width: 100%;line-height: 2em;text-align: justify;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <span
+                                                                                        style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">广西首批援鄂医疗队医疗组组长</span>
+                                                                                </section>
+                                                                                <section
+                                                                                    style="max-width: 100%;line-height: 2em;text-align: justify;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <span
+                                                                                        style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">广西医科大学第一附属医院首批援鄂医疗队队长</span>
+                                                                                </section>
+                                                                                <section
+                                                                                    style="max-width: 100%;line-height: 2em;text-align: justify;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <span
+                                                                                        style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">广西医科大学第一附属医院
+                                                                                        重症医学科一病区副主任、医学博士</span>
+                                                                                </section>
+                                                                            </section>
+                                                                        </section>
+                                                                    </section>
+                                                                </section>
+                                                                <section
+                                                                    style="max-width: 100%;display: inline-block;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                    <section
+                                                                        style="max-width: 100%;background-color: rgb(254, 254, 254);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                        <section
+                                                                            style="max-width: 100%;display: flex;justify-content: center;align-items: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                            <p
+                                                                                style="max-width: 100%;min-height: 1em;text-align: center;transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);letter-spacing: 2px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <img data-ratio="1" data-type="gif"
+                                                                                    data-w="18"
+                                                                                    data-src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                    class="__bg_gif"
+                                                                                    style="display: block; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 18px !important; height: auto !important; visibility: visible !important;"
+                                                                                    _width="18px"
+                                                                                    src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                    data-order="3" data-fail="0"></p>
+                                                                            <section
+                                                                                style="max-width: 100%;width: 8px;height: 8px;background: rgb(159, 210, 236);border-radius: 50%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <br
+                                                                                    style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                            </section>
+                                                                        </section>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <img class="rich_pages " data-ratio="1.7777777777777777"
+                                                                data-s="300,640" data-type="jpeg" data-w="900"
+                                                                data-src="https://mmbiz.qpic.cn/mmbiz_jpg/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3egSFxFuBIhbDXdib4FNiarTlyCZejUfTVEiaFs0ictIQmsYRoibLB76Xn5nw/640?wx_fmt=jpeg"
+                                                                style="background-color: rgb(238, 237, 235); border-width: 1px; border-style: solid; border-color: rgb(238, 237, 235); background-size: 22px; background-position: center center; background-repeat: no-repeat; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 625px !important; height: auto !important; visibility: visible !important;width: 100% !important;"
+                                                                src="https://mmbiz.qpic.cn/mmbiz_jpg/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3egSFxFuBIhbDXdib4FNiarTlyCZejUfTVEiaFs0ictIQmsYRoibLB76Xn5nw/640?wx_fmt=jpeg"
+                                                                crossorigin="anonymous" data-fail="0"></p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </section>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">“我做重症近20年，有救治H7N9的经验，同时还在医院带队做ECMO（体外膜肺氧合）。我出生在武汉，妈妈是武汉人，她曾经作为地质队员援助广西。我现在请战守卫武汉，也是为了守护广西。”</span>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: 1.5em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">……</span>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">即将出征武汉时，温汉春这些话掷地有声。</span>
+                                                        </section>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <img class="rich_pages " data-ratio="1" data-s="300,640"
+                                                                data-type="png" data-w="940"
+                                                                data-src="https://mmbiz.qpic.cn/mmbiz_png/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3eyap2mzBBaGjfGFgq4XdOYPUBftEt9aYZvYS6KxIIjiaetDGWwJAZDwg/640?wx_fmt=png"
+                                                                style="background-color: rgb(238, 237, 235); border-width: 1px; border-style: solid; border-color: rgb(238, 237, 235); background-size: 22px; background-position: center center; background-repeat: no-repeat; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 625px !important; height: auto !important; visibility: visible !important;width: 100% !important;"
+                                                                src="https://mmbiz.qpic.cn/mmbiz_png/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3eyap2mzBBaGjfGFgq4XdOYPUBftEt9aYZvYS6KxIIjiaetDGWwJAZDwg/640?wx_fmt=png"
+                                                                crossorigin="anonymous" data-fail="0"></p>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">1月27日，广西医科大学第一附属医院18名医疗队员驰援武汉，进驻改造后的黄陂区中医医院发热病区。在医疗队队长温汉春主任医师的带领下，1月30日下午，医护人员在黄陂区中医医院7楼建立起该院的第一个重症发热病区。</span>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">紧张，忙碌，这是温汉春在重症病区的日常生活。每天，她除了正常的查房、会诊、救治外，还要按例巡查病区、协调院方及当地防控小组物资和人员的调配、指导医护人员调试社会各界捐赠的医疗设备……在疫情最紧张的那段日子里，病区一天的用氧量是该院半年的用量，所以氧气储备、配置专业医师等问题都需要跟院方及当地防控小组一起协调解决。这场惊心动魄的战役不仅考验着每个医护人员的专业素养，更是考验着所有人的毅力和精神。2020年3月，温汉春被国家卫生健康委、人力资源社会保障部、国家中医药管理局授予“全国卫生健康系统新冠肺炎疫情防控工作先进个人”荣誉称号。</span>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <p><br></p>
+                                    <p
+                                        style="max-width: 100%;min-height: 1em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                        <br
+                                            style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                    </p>
+                                    <p><br></p>
+                                    <section data-support="96编辑器" data-style-id="26937"
+                                        style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                        <section
+                                            style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;text-align: right;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                            <section
+                                                style="padding: 5px;max-width: 100%;border-width: 5px;border-style: solid;border-color: rgb(214, 237, 243);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                <section
+                                                    style="padding: 5px 15px 15px;max-width: 100%;border-width: 1px;border-style: solid;border-color: rgb(214, 237, 243);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                    <p
+                                                        style="margin-left: auto;max-width: 100%;min-height: 1em;text-align: center;width: 3em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        <img data-ratio="0.54" data-type="png" data-w="200"
+                                                            data-src="https://mmbiz.qpic.cn/mmbiz_png/Ljib4So7yuWiaRfTCHssQh4gdoMCemwnvJgSPUcdYyib1tJviaLOUoddA9pz4V7pmAhhT9qaQkicEk1LPQLKBfibAJSQ/640?wx_fmt=png"
+                                                            style="background-color: rgb(238, 237, 235); border-width: 1px; border-style: solid; border-color: rgb(238, 237, 235); background-size: 22px; background-position: center center; background-repeat: no-repeat; display: block; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 51px !important; height: auto !important; visibility: visible !important;"
+                                                            _width="51px"
+                                                            src="https://mmbiz.qpic.cn/mmbiz_png/Ljib4So7yuWiaRfTCHssQh4gdoMCemwnvJgSPUcdYyib1tJviaLOUoddA9pz4V7pmAhhT9qaQkicEk1LPQLKBfibAJSQ/640?wx_fmt=png"
+                                                            crossorigin="anonymous" class="" data-fail="0"></p>
+                                                    <section
+                                                        style="max-width: 100%;display: flex;justify-content: center;align-items: flex-start;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        <section
+                                                            style="margin-top: 5px;padding: 3px 10px;max-width: 100%;box-sizing: border-box;background-color: rgb(148, 216, 234);display: inline-block;vertical-align: middle;overflow-wrap: break-word !important;">
+                                                            <p
+                                                                style="max-width: 100%;min-height: 1em;letter-spacing: 2px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                <strong
+                                                                    style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span
+                                                                        style="max-width: 100%;color: rgb(0, 0, 0);font-size: 20px;box-sizing: border-box !important;overflow-wrap: break-word !important;">报告人：邹炎华</span></strong>
+                                                            </p>
+                                                        </section>
+                                                        <section
+                                                            style="margin-left: -8px;max-width: 100%;box-sizing: border-box;border-style: solid;border-width: 2px;border-color: rgb(254, 254, 254);width: 1em;height: 1em;background-color: rgb(255, 197, 197);border-radius: 50%;display: inline-block;vertical-align: top;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </section>
+                                                    </section>
+                                                    <section
+                                                        style="margin-top: 15px;margin-bottom: 5px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        <section data-support="96编辑器" data-style-id="26055"
+                                                            style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <section
+                                                                style="margin-top: 10px;margin-bottom: 10px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                <section
+                                                                    style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                    <section
+                                                                        style="position: relative;top: -10px;max-width: 100%;display: inline-block;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                        <section
+                                                                            style="max-width: 100%;background-color: rgb(254, 254, 254);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                            <section
+                                                                                style="max-width: 100%;display: flex;justify-content: center;align-items: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <section
+                                                                                    style="max-width: 100%;width: 8px;height: 8px;background: rgb(159, 210, 236);border-radius: 50%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <br
+                                                                                        style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                </section>
+                                                                                <p
+                                                                                    style="max-width: 100%;min-height: 1em;text-align: center;letter-spacing: 2px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <img data-ratio="1" data-type="gif"
+                                                                                        data-w="18"
+                                                                                        data-src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                        class="__bg_gif"
+                                                                                        style="display: block; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 18px !important; height: auto !important; visibility: visible !important;"
+                                                                                        _width="18px"
+                                                                                        src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                        data-order="4" data-fail="0">
+                                                                                </p>
+                                                                            </section>
+                                                                        </section>
+                                                                    </section>
+                                                                    <section
+                                                                        style="margin-top: -25px;margin-bottom: -12px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                        <section
+                                                                            style="padding-top: 8px;padding-bottom: 8px;max-width: 100%;box-sizing: border-box;border-right-width: 2px;border-left-width: 2px;border-top: solid rgb(159, 210, 236);border-bottom: solid rgb(159, 210, 236);border-right-color: rgb(159, 210, 236);border-left-color: rgb(159, 210, 236);overflow-wrap: break-word !important;">
+                                                                            <section
+                                                                                style="padding: 10px;max-width: 100%;background-color: rgb(218, 241, 252);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <section
+                                                                                    style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <span
+                                                                                        style="max-width: 100%;color: rgb(0, 0, 0);font-size: 16px;box-sizing: border-box !important;overflow-wrap: break-word !important;">广西首批援鄂医疗队队员</span>
+                                                                                </section>
+                                                                                <section
+                                                                                    style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <span
+                                                                                        style="max-width: 100%;color: rgb(0, 0, 0);font-size: 16px;box-sizing: border-box !important;overflow-wrap: break-word !important;">广西援鄂抗疫武汉火线入党党员</span>
+                                                                                </section>
+                                                                                <section
+                                                                                    style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                    <span
+                                                                                        style="max-width: 100%;color: rgb(0, 0, 0);font-size: 16px;box-sizing: border-box !important;overflow-wrap: break-word !important;">广西江滨医院（自治区第三人民医院）呼吸内科护师</span>
+                                                                                </section>
+                                                                            </section>
+                                                                        </section>
+                                                                    </section>
+                                                                </section>
+                                                                <section
+                                                                    style="max-width: 100%;display: inline-block;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                    <section
+                                                                        style="max-width: 100%;background-color: rgb(254, 254, 254);box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                        <section
+                                                                            style="max-width: 100%;display: flex;justify-content: center;align-items: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                            <p
+                                                                                style="max-width: 100%;min-height: 1em;text-align: center;transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);letter-spacing: 2px;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <img data-ratio="1" data-type="gif"
+                                                                                    data-w="18"
+                                                                                    data-src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                    class="__bg_gif"
+                                                                                    style="display: block; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 18px !important; height: auto !important; visibility: visible !important;"
+                                                                                    _width="18px"
+                                                                                    src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWiaRkKXdbkAFcHgWMj4wecEjE54jUpsIOx3ko3ayMyeyRqFu5vxsNllwmoq5mS6a6t6SZWGhB5ibvOw/640?wx_fmt=gif"
+                                                                                    data-order="5" data-fail="0"></p>
+                                                                            <section
+                                                                                style="max-width: 100%;width: 8px;height: 8px;background: rgb(159, 210, 236);border-radius: 50%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                                <br
+                                                                                    style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                                            </section>
+                                                                        </section>
+                                                                    </section>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <img class="rich_pages " data-ratio="1.7777777777777777"
+                                                                data-s="300,640" data-type="png" data-w="612"
+                                                                data-src="https://mmbiz.qpic.cn/mmbiz_png/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3enuU2LGU7fdX6oNdo8wpOIK4WkcK0oibM7zaXfKzwqYqYEKaryicGYnxg/640?wx_fmt=png"
+                                                                style="background-color: rgb(238, 237, 235); border-width: 1px; border-style: solid; border-color: rgb(238, 237, 235); background-size: 22px; background-position: center center; background-repeat: no-repeat; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 612px !important; height: auto !important; visibility: visible !important;width: 100% !important;"
+                                                                src="https://mmbiz.qpic.cn/mmbiz_png/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3enuU2LGU7fdX6oNdo8wpOIK4WkcK0oibM7zaXfKzwqYqYEKaryicGYnxg/640?wx_fmt=png"
+                                                                crossorigin="anonymous" data-fail="0"></p>
+                                                        <section
+                                                            style="max-width: 100%;letter-spacing: 2px;text-align: left;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </section>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">“作为一名战斗在武汉抗疫一线的90后，我并不孤独。我们在武汉抗疫中没有一个人退缩，大家都是勇敢往前冲，不计报酬，无论生死，都是战斗在最危险的一线。”</span>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">……</span>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">这是护师邹炎华写下的心语。</span>
+                                                        </section>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br></section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: center;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <img class="rich_pages " data-cropselx1="0"
+                                                                data-cropselx2="526" data-cropsely1="0"
+                                                                data-cropsely2="700" data-ratio="1.3035714285714286"
+                                                                data-s="300,640" data-type="jpeg" data-w="616"
+                                                                data-src="https://mmbiz.qpic.cn/mmbiz_jpg/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3eJCoGBRfGwhZZCro6MFQQvnUnIptFur53nP4TxFhkXqYiaG6uoz2JPiaw/640?wx_fmt=jpeg"
+                                                                style="background-color: rgb(238, 237, 235); border-width: 1px; border-style: solid; border-color: rgb(238, 237, 235); background-size: 22px; background-position: center center; background-repeat: no-repeat; box-sizing: border-box !important; overflow-wrap: break-word !important; width: 537px !important; height: auto !important; visibility: visible !important;width: 100% !important;"
+                                                                _width="100%"
+                                                                src="https://mmbiz.qpic.cn/mmbiz_jpg/iclrYgcwdIdhw7743ia9p8ia2DjKNflBp3eJCoGBRfGwhZZCro6MFQQvnUnIptFur53nP4TxFhkXqYiaG6uoz2JPiaw/640?wx_fmt=jpeg"
+                                                                crossorigin="anonymous" data-fail="0"></p>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">2020年，第一批90后进入而立之年。在这场与时间赛跑、与病魔较量的战斗中，曾经被守护的孩子，披甲冲锋。据统计，支援湖北武汉的医务人员中，这群年轻人有1.2万人，差不多是整个队伍的三分之一。邹炎华也是其中的一员。</span>
+                                                        </section>
+                                                        <p
+                                                            style="max-width: 100%;min-height: 1em;text-align: justify;line-height: normal;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <br
+                                                                style="max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                        </p>
+                                                        <section
+                                                            style="max-width: 100%;text-align: justify;line-height: 2em;box-sizing: border-box !important;overflow-wrap: break-word !important;">
+                                                            <span
+                                                                style="max-width: 100%;font-size: 16px;color: rgb(0, 0, 0);box-sizing: border-box !important;overflow-wrap: break-word !important;">在隔离病房，很多危险的工作由护理完成，护士的工作很辛苦。比如采集检测用的咽拭子样本、采集血样、喂病人吃饭、病人对话等，直面感染风险，他穿着不透气的防护服，连续工作六七个小时，承受着巨大的身心压力。面对困难，他勇挑重任、迎难而上，积极投身疫情防控阻击战，在武汉火线入党，用实际行动诠释了年轻一代的责任与担当，为疫情防控贡献了青春力量。</span>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </van-col>
 
-                            <van-col>
-                                <van-row>
-                                    <!-- 温汉春部分 -->
-                                    <van-col>
-                                        <van-row>
-
-                                            <van-col>
-                                                <p style="font-weight: 800;">温汉春</p>
-                                                <p>广西医科大学第一附属医院 重症医学科一病区副主任 主任医师 </p>
-
-                                                <p> 广西医科大学第一附属医院支援湖北第一批医疗队队长</p>
-                                            </van-col>
-
-                                            <van-col>
-                                                <p style="font-weight: 600;">心声：</p>
-                                                <p> 武汉需要我们待多久，我们就待多久。</p>
-                                                <!-- <p style="text-indent: 2em;">
-                                                    一方面我从事重症医学近20年，有救治H7N9患者经验，在医院带队做ECMO。另一方面，我在武汉出生，妈妈是武汉人，作为地质队员援助广西，所以强烈要求参战，援助武汉!
-                                                </p> -->
-                                            </van-col>
-                                            <van-col style="display: flex;justify-content: center;align-items: center;"
-                                                :span="24">
-                                                <van-image cover src="./img/girl1.png" />
-                                            </van-col>
-                                            <van-col :span="24" style="height: 40px;"></van-col>
-                                            <van-col style="display: flex;justify-content: center;align-items: center;"
-                                                :span="24">
-                                                <van-image cover src="./img/girl2.jpg" />
-                                            </van-col>
-                                            <van-col :span="24" style="height: 40px;"></van-col>
-                                            <van-col style="display: flex;justify-content: center;align-items: center;"
-                                                :span="24">
-                                                <van-image cover src="./img/girl3.png" />
-                                            </van-col>
-                                            <van-col :span="24" style="height: 40px;"></van-col>
-
-                                            <van-col style="display: flex;justify-content: center;align-items: center;"
-                                                :span="24">
-                                                <van-image cover src="./img/girl4.png" />
-                                            </van-col>
-                                            <van-col :span="24" style="height: 40px;"></van-col>
-
-                                            <van-col style="display: flex;justify-content: center;align-items: center;"
-                                                :span="24">
-                                                <van-image cover src="./img/girl5.jpg" />
-                                            </van-col>
-                                            <van-col :span="24" style="height: 40px;"></van-col>
-
-
-                                        </van-row>
-                                    </van-col>
-                                    <!-- 温汉春结束 -->
-
-
-
-
-
-
-                                </van-row>
                             </van-col>
-                        </van-col>
-                        <van-col style="height: 10px;background:rgba(245,246,247,1);width: 100vw;" :span="24"></van-col>
-                        
-                        <van-col :span="24" class="grjs-zyh">
-
-                            <!-- 邹炎华 -->
-                            <van-col>
-                                <van-row>
-
-                                    <van-col>
-                                        <p style="font-weight: 800;">邹炎华</p>
-                                        <p>广西壮族自治区江滨医院（自治区第三人民医院）呼吸内科护师 预备党员 广西第一批援鄂医疗队队员</p>
-                                    </van-col>
-
-                                    <van-col>
-                                        <p style="font-weight: 600;">心声：</p>
-
-                                        <p>疫情如战场，来到武汉，我就是一名战士！</p>
-                                    </van-col>
-
-                                    <!-- <van-col>
-                                    <p>个人感言：</p>
-                                    <p> 每一个战胜自己恐惧的人，都是英雄，死亡不是我们的终点，遗忘才是。</p>
-                                </van-col> -->
-                                    <van-col style="display: flex;justify-content: center;align-items: center;"
-                                        :span="24">
-                                        <van-image cover src="./img/boy2.png" />
-                                    </van-col>
-                                    <van-col :span="24" style="height: 40px;"></van-col>
-                                    <van-col style="display: flex;justify-content: center;align-items: center;"
-                                        :span="24">
-                                        <van-image cover src="./img/boy1.png" />
-                                    </van-col>
-                                    <van-col :span="24" style="height: 40px;"></van-col>
-                                    <van-col style="display: flex;justify-content: center;align-items: center;"
-                                        :span="24">
-                                        <van-image cover src="./img/boy3.png" />
-                                    </van-col>
-                                    <van-col :span="24" style="height: 40px;"></van-col>
-                                    <van-col style="display: flex;justify-content: center;align-items: center;"
-                                        :span="24">
-                                        <van-image cover src="./img/boy4.png" />
-                                    </van-col>
-                                    <van-col :span="24" style="height: 40px;"></van-col>
-                                    <van-col style="display: flex;justify-content: center;align-items: center;"
-                                        :span="24">
-                                        <van-image cover src="./img/boy5.png" />
-                                    </van-col>
-                                </van-row>
-                            </van-col>
-                            <!-- 邹炎华结束 -->
-                        </van-col>
+                        </van-row>
                     </van-tab>
                     <van-tab title="介绍">
                         <van-col style="height: 20px;background:rgba(245,246,247,1);" :span="24"></van-col>
